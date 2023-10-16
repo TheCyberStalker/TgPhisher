@@ -1,5 +1,6 @@
 # TgPhisher
-Telegram bot « Eye Of God » phishing script
+Telegram bot « Eye Of God » 
+phishing script for bad guys 🕶️
 
 # Установка (Termux/Linux)
 
