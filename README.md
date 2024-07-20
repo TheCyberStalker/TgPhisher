@@ -12,7 +12,7 @@ cd TgPhisher
 pip3 install -r requirements.txt
 python3 tgphisher.py
 ```
-# небольшая документация
+# небольшая  недодокументация
 
 Для того чтобы создать бота вы в поиске телеграм
 ищете @BotFather, далее создаем и оформляем бота
