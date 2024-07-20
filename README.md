@@ -1,7 +1,7 @@
 # TgPhisher
 Telegram bot « Eye Of God » 
 phishing script for bad guys 🕶️
-upd: in script you have a TeleKick function!
+upd: in script you have a TeleKick function and more!
 # Установка (Termux/Linux)
 
 ```
