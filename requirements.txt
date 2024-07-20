@@ -1,0 +1,4 @@
+PyTelegramBotApi
+telethon
+colorama
+requests
